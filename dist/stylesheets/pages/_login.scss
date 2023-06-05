@@ -1,0 +1,22 @@
+.login-box {
+    .login-logo {
+        small {
+            font-size: 1rem;
+        }
+    }
+    .input-group .input-group-text {
+        border-radius: 0;
+        border-top: 0;
+        border-right: 0;
+    }
+
+    .row#other-options {
+        a {
+            color: #20A397;
+        }
+    }
+
+    label:not(.form-check-label):not(.custom-file-label) {
+        font-weight: 400;
+    }
+}

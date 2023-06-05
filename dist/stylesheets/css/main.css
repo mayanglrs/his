@@ -1,0 +1,107 @@
+.login-box .login-logo small {
+  font-size: 1rem;
+}
+.login-box .input-group .input-group-text {
+  border-radius: 0;
+  border-top: 0;
+  border-right: 0;
+}
+.login-box .row#other-options a {
+  color: #20A397;
+}
+.login-box label:not(.form-check-label):not(.custom-file-label) {
+  font-weight: 400;
+}
+
+:root {
+  --violet-blue: #3F51B5;
+  --transparent-dark: rgba(0, 0, 0, 0.12);
+}
+
+.bg-violet-blue {
+  background-color: var(--violet-blue) !important;
+}
+.bg-violet-blue,
+.bg-violet-blue > a {
+  color: #fff !important;
+}
+
+.bg-transparent-dark {
+  background-color: var(--transparent-dark) !important;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
+.dropdown.w-100 {
+  cursor: pointer;
+}
+.dropdown.w-100 .info.dropdown-toggle.w-100 {
+  padding-left: 20px;
+}
+.dropdown.w-100 .info.dropdown-toggle.w-100::after {
+  float: right;
+}
+
+#homepage .main-header {
+  background-color: var(--violet-blue);
+  background: var(--violet-blue);
+  color: #fff;
+}
+#homepage .main-header .nav-link {
+  color: #fff;
+}
+#homepage .main-sidebar .brand-link {
+  background-color: var(--violet-blue);
+  color: #fff;
+}
+#homepage .main-sidebar .brand-link span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+#homepage .main-sidebar .nav-sidebar > .nav-item > .nav-link.active {
+  background-color: var(--violet-blue);
+  color: #fff;
+}
+#homepage .main-sidebar .nav.nav-treeview {
+  padding-left: 2rem;
+}
+#homepage .content .info-box {
+  color: #212121;
+}
+#homepage .content .info-box:hover {
+  box-shadow: 0 0 1px rgb(63, 81, 181), 0 1px 3px rgb(63, 81, 181);
+}
+
+:root {
+  --violet-blue: #3F51B5;
+  --transparent-dark: rgba(0, 0, 0, 0.12);
+}
+
+.card.card-tabs {
+  box-shadow: none;
+}
+.card.card-tabs:not(.card-outline) > .card-header .nav-item:first-child .nav-link {
+  border-bottom: 1px solid;
+  border-color: #dee2e6;
+}
+.card.card-tabs:not(.card-outline) > .card-header .nav-tabs .nav-link {
+  border: unset;
+  color: #6c757d;
+  font-size: 0.75rem;
+}
+.card.card-tabs:not(.card-outline) > .card-header .nav-tabs .nav-link.active {
+  border-color: #007bff;
+  border-bottom: 2px solid;
+  color: #007bff;
+}
+
+.custom-control-label::before {
+  background: #fff;
+  box-shadow: none;
+}
+
+.bordered-label {
+  border-bottom: 1px solid #dee2e6;
+}/*# sourceMappingURL=main.css.map */

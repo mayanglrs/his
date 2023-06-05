@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Information System | Cetak No Antrian</title>
+
+    <!-- Gunakan styling seminim mungkin dan jangan menggunakan link eksternal -->
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        main {
+            width: 100%;
+        }
+        .container {
+            margin: 24px auto;
+            width: fit-content;
+        }
+        .card-header {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            border-bottom: 1px solid #777777;
+        }
+        .card-box img {
+            width: 128px;
+        }
+        .card-wrapper {
+            display: block;
+        }
+        .card-title,
+        .card-sub-title {
+            margin: 0;
+            font-size: 16px;
+        }
+        .card-sub-title {
+            font-size: 14px;
+        }
+        .queue-title,
+        .queue-number {
+            margin: 0;
+            font-size: 20px;
+            text-align: center;
+        }
+        .queue-title {
+            margin-top: 16px;
+        }
+        .queue-number {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+        tr td:first-child {
+            width: 50%;
+        }
+        .card-footer p {
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-box">
+                        <img src="https://grhakumalaclinic.com/wp-content/uploads/2019/09/logo-6.png" alt="HIS logo">
+                    </div>
+                    <div class="card-wrapper">
+                        <h3 class="card-title">Klinik GRHA Kumala</h3>
+                        <p class="card-sub-title">Jl. Panglima Sudirman No. 231. Probolinggo</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h2 class="queue-title">NO ANTRIAN</h2>
+                    <h2 class="queue-number">1</h2>
+                    <table>
+                        <tr>
+                            <td>No. RM</td>
+                            <td>: 00.00.00.24.08</td>
+                        </tr>
+                        <tr>
+                            <td>Nama Pasien</td>
+                            <td>: Sigit Yulianto (29 Thn 8 Bln 16 hari)</td>
+                        </tr>
+                        <tr>
+                            <td><b>Poli</b></td>
+                            <td>: <b>Unit Gawat Darurat</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>Dokter</b></td>
+                            <td>: <b>One Lavi Riyawati, dr.</b></td>
+                        </tr>
+                        <tr>
+                            <td>Penjamin</td>
+                            <td>: UMUM / BPJS KESEHATAN</td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal/Jam Daftar</td>
+                            <td>: 2023-03-26 / 14:21:09</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card-footer">
+                    <p>
+                        Silahkan menunggu di Ruang Tunggu <br>
+                        untuk mendapatkan pelayanan sesuai Antrian. <br>
+                        Berlaku 1X Kunjungan di hari yang sama.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        window.addEventListener('load', () => {
+            // Automatically open the print dialog
+            window.print();
+        });
+    </script>
+</body>
+</html>

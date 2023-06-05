@@ -1,0 +1,38 @@
+// [START] Root
+:root {
+    --violet-blue: #3F51B5;
+    --transparent-dark: rgba(0, 0, 0, 0.12);
+
+}
+// [END] Root
+
+// Custom Tabs - For Underline Style
+.card.card-tabs {
+    box-shadow: none;
+    &:not(.card-outline)>.card-header {
+        .nav-item:first-child .nav-link {
+            border-bottom: 1px solid;
+            border-color: #dee2e6;
+        }
+        .nav-tabs .nav-link {
+            border: unset;
+            color: #6c757d;
+            font-size: 0.75rem;
+            &.active {
+                border-color: #007bff;
+                border-bottom: 2px solid;
+                color: #007bff;
+            }
+        }
+    }
+}
+
+// Custom Radio - Erase the background
+.custom-control-label::before {
+    background: #fff;
+    box-shadow: none;
+}
+
+.bordered-label {
+    border-bottom: 1px solid #dee2e6;
+}

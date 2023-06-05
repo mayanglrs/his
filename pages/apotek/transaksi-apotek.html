@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Information System | Transaksi Apotek</title>
+  
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="../../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="../../plugins/jqvmap/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="../../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="../../plugins/summernote/summernote-bs4.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+     <!-- Style Modification -->
+     <link rel="stylesheet" href="../../dist/stylesheets/css/main.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed" id="homepage">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+            <!-- Navbar Search -->
+            <li class="nav-item">
+                <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                <i class="fas fa-search"></i>
+                </a>
+                <div class="navbar-search-block">
+                <form class="form-inline">
+                    <div class="input-group input-group-sm">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-navbar" type="submit">
+                        <i class="fas fa-search"></i>
+                        </button>
+                        <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                        <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    </div>
+                </form>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                    <a href="#" class="nav-link" id="nav-actions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="nav-actions">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-light-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="index3.html" class="brand-link text-center">
+                <!-- <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> -->
+                <span class="brand-text">Healthcare Information System</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex overflow-visible">
+                    <div class="image my-auto">
+                        <img src="../../dist/img/user1-128x128.jpg" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="dropdown w-100">
+                        <div class="info dropdown-toggle w-100" data-toggle="dropdown">
+                            <a href="#" class="d-block">Administrator</a>
+                            <small class="text-muted">Modul Apotek</small>
+                        </div>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="nav-actions">
+                            <a class="dropdown-item" href="../../index.html">
+                                <i class="fa fa-sign-out-alt"></i> Logout
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <li class="nav-header">MAIN NAVIGATIONS</li>
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">
+                            <i class="nav-icon fas fa-th-large"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-file"></i>
+                            <p>1. Laporan <i class="right fas fa-angle-left"></i></p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="./sub-menu-1.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Sub Menu 1</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./sub-menu-2.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Sub Menu 2</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./transaksi-apotek.html" class="nav-link active">
+                            <i class="nav-icon fas fa-dollar-sign"></i>
+                            <p>2. Transaksi Apotek</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./depo-apotek.html" class="nav-link">
+                            <i class="nav-icon fas fa-box"></i>
+                            <p>3. Depo Apotek</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./master-obat.html" class="nav-link">
+                            <i class="nav-icon fas fa-pills"></i>
+                            <p>4. Master Obat</p>
+                        </a>
+                    </li>
+                </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0">Transaksi Apotek</h1>
+                        </div><!-- /.col -->
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="../home.html">Dashboard App</a></li>
+                                <li class="breadcrumb-item"><a href="./index.html">Modul Apotek</a></li>
+                            <li class="breadcrumb-item active">Transaksi Apotek</li>
+                            </ol>
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header bg-purple">
+                                    <h3 class="card-title">Form Bayar & Buat Resep</h3>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="nav nav-tabs" id="custom-content-above-tab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="resep-dari-unit-tab" data-toggle="pill" href="#resep-dari-unit" role="tab" aria-controls="resep-dari-unit" aria-selected="true">Resep Dari Unit</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="buat-resep-manual-tab" data-toggle="pill" href="#buat-resep-manual" role="tab" aria-controls="buat-resep-manual" aria-selected="false">Buat Resep Manual</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="beli-bebas-tab" data-toggle="pill" href="#beli-bebas" role="tab" aria-controls="beli-bebas" aria-selected="false">Beli Bebas</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="setting-embalase-tab" data-toggle="pill" href="#setting-embalase" role="tab" aria-controls="setting-embalase" aria-selected="false">Setting Embalase</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content py-2" id="custom-content-above-tabContent">
+                                        <div class="tab-pane fade show active" id="resep-dari-unit" role="tabpanel" aria-labelledby="resep-dari-unit-tab">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <button class="btn btn-primary w-100 mb-4">
+                                                        <i class="fas fa-redo"></i> Tampil
+                                                    </button>
+                                                    <div class="table-responsive">
+                                                        <table id="table-pasien" class="table table-bordered table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="text-nowrap">#</th>
+                                                                    <th class="text-nowrap">NRM</th>
+                                                                    <th class="text-nowrap">Nama</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="text-nowrap">
+                                                                        <button class="btn bg-purple">
+                                                                            <i class="fas fa-arrow-right"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                    <td class="text-nowrap">0000000044</td>
+                                                                    <td class="text-nowrap">Muzdalifah</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-nowrap">
+                                                                        <button class="btn bg-purple">
+                                                                            <i class="fas fa-arrow-right"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                    <td class="text-nowrap">0000000090</td>
+                                                                    <td class="text-nowrap">Pramono</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-nowrap">
+                                                                        <button class="btn bg-purple">
+                                                                            <i class="fas fa-arrow-right"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                    <td class="text-nowrap">0000000139</td>
+                                                                    <td class="text-nowrap">Risa Purwanti</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-nowrap">
+                                                                        <button class="btn bg-purple">
+                                                                            <i class="fas fa-arrow-right"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                    <td class="text-nowrap">0000000315</td>
+                                                                    <td class="text-nowrap">M Romli</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-nowrap">
+                                                                        <button class="btn bg-purple">
+                                                                            <i class="fas fa-arrow-right"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                    <td class="text-nowrap">0000000452</td>
+                                                                    <td class="text-nowrap">Dian Cahyo Prabowo</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-8">
+                                                    <div class="table-responsive">
+                                                        <table id="table-resep-dari-unit" class="table table-bordered table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="text-nowrap">Opsi</th>
+                                                                    <th class="text-nowrap">Resep Dokter</th>
+                                                                    <th class="text-nowrap">Poli/Kamar</th>
+                                                                    <th class="text-nowrap">Lembar/Resep</th>
+                                                                    <th class="text-nowrap">No. RM</th>
+                                                                    <th class="text-nowrap">Nama</th>
+                                                                    <th class="text-nowrap">Sex/Umur</th>
+                                                                    <th class="text-nowrap">Dokter</th>
+                                                                    <th class="text-nowrap">Last User</th>
+                                                                    <th class="text-nowrap">Tanggal</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="text-nowrap">
+                                                                        <button class="btn bg-primary">
+                                                                            <i class="fas fa-share fa-flip-horizontal"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                    <td class="text-nowrap">
+                                                                        <button class="btn bg-primary w-100" data-toggle="modal" data-target="#modal-resep-dokter">
+                                                                            <i class="fas fa-eye"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                    <td class="text-nowrap">Klinik Psikiatri/Rawat Jalan</td>
+                                                                    <td class="text-nowrap">L-2110</td>
+                                                                    <td class="text-nowrap">00000000044</td>
+                                                                    <td class="text-nowrap">Muzdalifah</td>
+                                                                    <td class="text-nowrap">Perempuan/52</td>
+                                                                    <td class="text-nowrap">Tiwik Kusdiningsih, dr., Sp.Kj.(K)</td>
+                                                                    <td class="text-nowrap">Tiwik Kusdiningsih, dr., Sp.Kj.(K)</td>
+                                                                    <td class="text-nowrap">2021-07-16 20:49:30</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-nowrap">
+                                                                        <button class="btn bg-primary">
+                                                                            <i class="fas fa-share fa-flip-horizontal"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                    <td class="text-nowrap">
+                                                                        <button class="btn bg-primary w-100" data-toggle="modal" data-target="#modal-resep-dokter">
+                                                                            <i class="fas fa-eye"></i>
+                                                                        </button>
+                                                                    </td>
+                                                                    <td class="text-nowrap">Klinik Psikiatri/Rawat Jalan</td>
+                                                                    <td class="text-nowrap">L-923</td>
+                                                                    <td class="text-nowrap">00000000044</td>
+                                                                    <td class="text-nowrap">Muzdalifah</td>
+                                                                    <td class="text-nowrap">Perempuan/52</td>
+                                                                    <td class="text-nowrap">Tiwik Kusdiningsih, dr., Sp.Kj.(K)</td>
+                                                                    <td class="text-nowrap">Tiwik Kusdiningsih, dr., Sp.Kj.(K)</td>
+                                                                    <td class="text-nowrap">2021-12-19 21:07:14</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="buat-resep-manual" role="tabpanel" aria-labelledby="buat-resep-manual-tab">
+                                            <p>...</p>
+                                        </div>
+                                        <div class="tab-pane fade" id="beli-bebas" role="tabpanel" aria-labelledby="beli-bebas-tab">
+                                            <p>...</p>
+                                        </div>
+                                        <div class="tab-pane fade" id="setting-embalase" role="tabpanel" aria-labelledby="setting-embalase-tab">
+                                            <p>...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header bg-purple">
+                                    <h3 class="card-title">Form Bayar & Buat Resep</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table id="table-preview-resep" class="table table-bordered table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-nowrap">No</th>
+                                                    <th class="text-nowrap">Nama Item/Barang</th>
+                                                    <th class="text-nowrap">Harga</th>
+                                                    <th class="text-nowrap">Qty</th>
+                                                    <th class="text-nowrap">No. Perintah</th>
+                                                    <th class="text-nowrap">Jenis Obat</th>
+                                                    <th class="text-nowrap">Jumlah Obat</th>
+                                                    <th class="text-nowrap">Total Harga</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap">m.f.pulv.da in cap dtd No. XXX / S 1-0-0 cap</td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap">m.f.pulv.da in cap dtd No. XXX / S 1-0-0 cap</td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-nowrap">3</td>
+                                                    <td class="text-nowrap">VITAMIN B12/100 tab</td>
+                                                    <td class="text-nowrap">89.00</td>
+                                                    <td class="text-nowrap">15</td>
+                                                    <td class="text-nowrap">30</td>
+                                                    <td class="text-nowrap">Racikan</td>
+                                                    <td class="text-nowrap">450</td>
+                                                    <td class="text-nowrap">40.442.00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button class="btn btn-primary w-100 mt-4">
+                                        <i class="fas fa-check-circle"></i> SUBMIT
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row align-items-end">
+                                        <div class="col-12 col-md-3">
+                                            <p class="mb-0">Muzdalifah/0000000044</p>
+                                            <hr class="m-0">
+                                            <small class="float-right text-muted mb-4">Nama/No. RM :</small>
+                                        </div>
+                                        <div class="col-12 col-md-3">
+                                            <p class="mb-0">Jalan K.H. Achmad Dahlan GG</p>
+                                            <hr class="m-0">
+                                            <small class="float-right text-muted mb-4">Alamat :</small>
+                                        </div>
+                                        <div class="col-12 col-md-3">
+                                            <p class="mb-0"></p>
+                                            <hr class="m-0">
+                                            <small class="float-right text-muted mb-4">Dokter :</small>
+                                        </div>
+                                        <div class="col-12 col-md-3">
+                                            <p class="mb-0"></p>
+                                            <hr class="m-0">
+                                            <small class="float-right text-muted mb-4">Perawatan :</small>
+                                        </div>
+                                        <div class="col-12 col-md-3">
+                                            <p class="mb-0"></p>
+                                            <hr class="m-0">
+                                            <small class="float-right text-muted mb-4">Ruangan :</small>
+                                        </div>
+                                        <div class="col-12 col-md-3">
+                                            <p class="mb-0">UMUM</p>
+                                            <hr class="m-0">
+                                            <small class="float-right text-muted mb-4">Jenis Pasien :</small>
+                                        </div>
+                                        <div class="col-12 col-md-3">
+                                            <p class="mb-0">UMUM</p>
+                                            <hr class="m-0">
+                                            <small class="float-right text-muted mb-4">Penjamin Pasien :</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card">
+                                <div class="card-header bg-purple">
+                                    <h3 class="card-title">Form Input Obat</h3>
+                                </div>
+                                <div class="card-body">
+                                    <form action="#" method="post">
+                                        <div class="form-group">
+                                            <select class="form-control form-control-border" id="nama">
+                                                <option selected>ALLOPURINOL 300 MG (hexapharm jaya) - Obat -> [172]</option></option>
+                                                <option>...</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="mb-0 text-black-50" for="harga">Harga : Rp.</label>
+                                            <input type="number" class="form-control form-control-border" id="harga" value="509.45">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="mb-0 text-black-50" for="qty">Qty :</label>
+                                            <input type="number" class="form-control form-control-border" id="qty" value="1">
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-success w-100">
+                                                <i class="fas fa-plus"></i> Obat
+                                            </button>
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-primary w-100">
+                                                <i class="fas fa-eye"></i> Daftar Harga Obat
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header bg-purple">
+                                    <h3 class="card-title">Form Input Diskon</h3>
+                                </div>
+                                <div class="card-body">
+                                    <form action="#" method="post">
+                                        <div class="form-group">
+                                            <label class="mb-0 text-black-50" for="nama-diskon">Nama Diskon :</label>
+                                            <input type="text" class="form-control form-control-border" id="nama-diskon" value="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="mb-0 text-black-50" for="qty-diskon">Qty :</label>
+                                            <input type="number" class="form-control form-control-border" id="qty-diskon" value="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="mb-0 text-black-50" for="nominal-diskon">Nominal :</label>
+                                            <input type="number" class="form-control form-control-border" id="nominal-diskon" value="">
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-success w-100">
+                                                <i class="fas fa-plus"></i> Diskon
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <div class="card">
+                                <div class="card-header bg-purple">
+                                    <h3 class="card-title">Transaksi Apotek</h3>
+                                </div>
+                                <div class="card-body">
+                                    <h2 class="text-bold">List Transaksi :</h2>
+                                    <hr>
+                                    <div class="table-responsive">
+                                        <table id="table-list-transaksi" class="table table-bordered table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-nowrap">Harga</th>
+                                                    <th class="text-nowrap">Edit</th>
+                                                    <th class="text-nowrap">Nama Item/Barang</th>
+                                                    <th class="text-nowrap">Lembar Resep</th>
+                                                    <th class="text-nowrap">Jenis Obat</th>
+                                                    <th class="text-nowrap">Kemasan</th>
+                                                    <th class="text-nowrap">Harga</th>
+                                                    <th class="text-nowrap">Qty</th>
+                                                    <th class="text-nowrap">Sub Total</th>
+                                                    <th class="text-nowrap">Tanggal</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-nowrap">
+                                                        <a href="#" class="btn btn-danger">
+                                                            <i class="fas fa-trash"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td class="text-nowrap">
+                                                        <a href="#" class="btn btn-primary">
+                                                            <i class="fas fa-pencil-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td class="text-nowrap">ALLOPURINOL 300 MG - Obat</td>
+                                                    <td class="text-nowrap">L-2110</td>
+                                                    <td class="text-nowrap">obat_jadi</td>
+                                                    <td class="text-nowrap">Tablet</td>
+                                                    <td class="text-nowrap">509.45</td>
+                                                    <td class="text-nowrap">1</td>
+                                                    <td class="text-nowrap">509.45</td>
+                                                    <td class="text-nowrap">2023-03-27 15:39:20</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-nowrap">
+                                                        <a href="#" class="btn btn-danger">
+                                                            <i class="fas fa-trash"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td class="text-nowrap">
+                                                        <a href="#" class="btn btn-primary">
+                                                            <i class="fas fa-pencil-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                    <td class="text-nowrap">Acyclovit 400 mg/100 tab - Obat</td>
+                                                    <td class="text-nowrap">L-2110</td>
+                                                    <td class="text-nowrap">obat_jadi</td>
+                                                    <td class="text-nowrap">Tablet</td>
+                                                    <td class="text-nowrap">1,194.71</td>
+                                                    <td class="text-nowrap">1</td>
+                                                    <td class="text-nowrap">1,194.71</td>
+                                                    <td class="text-nowrap">2023-03-27 15:39:15</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="mt-4">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-md-4">
+                                                <p class="m-0 w-100 text-center">Total Transaksi<span class="float-right">:</span></p>
+                                            </div>
+                                            <div class="col-12 col-md-8">
+                                                <div class="form-group m-0 p-1">
+                                                    <input type="text" class="form-control" value="1,704.16"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <p class="m-0 w-100 text-center">Total Embalase<span class="float-right">:</span></p>
+                                            </div>
+                                            <div class="col-12 col-md-8">
+                                                <div class="form-group m-0 p-1">
+                                                    <input type="text" class="form-control" value="0"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h2 class="text-bold">List Diskon :</h2>
+                                    <hr>
+                                    <div class="table-responsive">
+                                        <table id="table-list-diskon" class="table table-bordered table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-nowrap">Opsi</th>
+                                                    <th class="text-nowrap">Nama</th>
+                                                    <th class="text-nowrap">Nominal</th>
+                                                    <th class="text-nowrap">Qty</th>
+                                                    <th class="text-nowrap">Tanggal</th>
+                                                    <th class="text-nowrap">User</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                    <td class="text-nowrap"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="mt-4">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-md-4">
+                                                <p class="m-0 w-100 text-center">Total Transaksi<span class="float-right">:</span></p>
+                                            </div>
+                                            <div class="col-12 col-md-8">
+                                                <div class="form-group m-0 p-1">
+                                                    <input type="text" class="form-control" value="1,704.16"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <p class="m-0 w-100 text-center">Total Embalase<span class="float-right">:</span></p>
+                                            </div>
+                                            <div class="col-12 col-md-8">
+                                                <div class="form-group m-0 p-1">
+                                                    <input type="text" class="form-control" value="0"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header bg-purple">
+                                    <h3 class="card-title">FORM BAYAR</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label class="m-0 text-black-50">Sub Total : Rp.</label>
+                                        <input type="text" class="form-control form-control-border bg-dark" placeholder="Sub Total" value="1,704.16">
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label class="m-0 text-black-50">Deposit : Rp.</label>
+                                        <input type="number" class="form-control form-control-border bg-dark" placeholder="Deposit" value="0">
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label class="m-0 text-black-50">Potongan : Rp.</label>
+                                        <input type="number" class="form-control form-control-border bg-dark" placeholder="Potongan" value="0">
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label class="m-0 text-black-50">No. Kwitansi :</label>
+                                        <input type="text" class="form-control form-control-border bg-dark" placeholder="No. Kwitansi" value="KW-00033963">
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <h5 class="m-0 text-black-50 text-bold">Total : Rp.</h5>
+                                        <input type="text" class="form-control form-control-border bg-dark" placeholder="Total" value="1,704.16">
+                                    </div>
+                                    <hr>
+                                    <hr>
+                                    <label class="m-0 text-black-50">Pilih Metode Pembayaran : </label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="input-penjamin">
+                                        <label class="form-check-label" for="input-penjamin">Pembayaran Penjamin</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="input-cash">
+                                        <label class="form-check-label" for="input-cash">Pembayaran Cash</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="input-credit-card">
+                                        <label class="form-check-label" for="input-credit-card">Pembayaran Credit Card</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="input-debit-card">
+                                        <label class="form-check-label" for="input-debit-card">Pembayaran Debit Card</label>
+                                    </div>
+                                    <hr>
+                                    <hr>
+                                    <button type="button" class="btn btn-success w-100">
+                                        <i class="fas fa-plus"></i> Hitung Kembalian
+                                    </button>
+                                    <hr>
+                                    <div class="form-group">
+                                        <label class="m-0 text-black-50">Kembalian : Rp.</label>
+                                        <input type="number" class="form-control form-control-border bg-danger" placeholder="Kembalian" value="0">
+                                        <small class="form-control-feedback text-purple">Jumlah Uang Kembalian: (Kembalian yang diberikan ke Pasien)</small>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-primary w-100">
+                                            <i class="fas fa-check-circle"></i> BAYAR
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.container-fluid -->
+                <div class="modal fade" id="modal-resep-dokter">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">RESEP</h4>
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h1 class="text-black-50 text-bold">KLINIK GRHA KUMALA</h1>
+                            <hr>
+                            <div class="row align-items-end">
+                                <div class="col-12 col-md-4">
+                                    <p class="mb-0">Tiwik Kusdiningsih, dr., Sp.KJ.(K)</p>
+                                    <hr class="mt-0">
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <p class="mb-0">SIP : 44/012/425.117/SIPDS/2020</p>
+                                    <hr class="mt-0">
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <p class="mb-0"></p>
+                                    <hr class="mt-0">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="pl-4">
+                                <p>Elizac 20 mg kaps Tablet 30</p>
+                                <p>Vitamin B1/100tab Tablet 15</p>
+                                <p>Vitamin B6 10 mg/100 tab (TIFA) Tablet 15</p>
+                                <p>VITAMIN B12/100 tab Tablet 15</p>
+                                <p>
+                                    m.f. pulv. da in cap dtd No. XXX
+                                    <br>S 1-0-0 cap
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="row align-items-end">
+                                <div class="col">
+                                    <p class="mb-0"></p>
+                                    <hr class="mt-0">
+                                </div>
+                                <div class="col">
+                                    <p class="mb-0">Muzdalifah</p>
+                                    <hr class="mt-0">
+                                </div>
+                                <div class="col">
+                                    <p class="mb-0">52 Tahun</p>
+                                    <hr class="mt-0">
+                                </div>
+                            </div>
+                            <p class="mb-0">Alamat : Jalan K.H. Achmad Dahlan GG</p>
+                            <hr class="mt-0">
+                        </div>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            Copyright &copy; 2019 | <strong><a href="/">Healthcare Information System</a>.</strong>
+            <div class="float-right d-none d-sm-inline-block">
+                <!-- <b>Version</b> 3.2.0 -->
+            </div>
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="../../plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="../../plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="../../plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="../../plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="../../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="../../plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="../../plugins/moment/moment.min.js"></script>
+    <script src="../../plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="../../plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="../../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../dist/js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="../../dist/js/pages/dashboard.js"></script>
+    <!-- DataTables  & Plugins -->
+    <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="../../plugins/jszip/jszip.min.js"></script>
+    <script src="../../plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="../../plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+
+    <script>
+        $('#table-pasien').DataTable({
+            "paging": true,
+            "lengthChange": true,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": true,
+            "responsive": false,
+        });
+        $('#table-resep-dari-unit').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": true,
+            "responsive": false,
+        });
+        $('#table-preview-resep').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": true,
+            "responsive": false,
+            "lengthChange": false,
+            "buttons": ["copy", "excel"],
+        }).buttons().container().appendTo('#table-preview-resep_wrapper .col-md-6:eq(0)');
+        $('#table-list-transaksi').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": true,
+            "responsive": false,
+            "lengthChange": false,
+            "buttons": ["copy", "excel"],
+        }).buttons().container().appendTo('#table-list-transaksi_wrapper .col-md-6:eq(0)');
+        $('#table-list-diskon').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": true,
+            "responsive": false,
+            "lengthChange": false,
+            "buttons": ["copy", "excel"],
+        }).buttons().container().appendTo('#table-list-diskon_wrapper .col-md-6:eq(0)');
+    </script>
+</body>
+</html>
