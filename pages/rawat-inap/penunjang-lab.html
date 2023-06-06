@@ -30,8 +30,16 @@
     <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
     <link rel="stylesheet" href="../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
-     <!-- Style Modification -->
-     <link rel="stylesheet" href="../../dist/stylesheets/css/main.css">
+    <!-- Style Modification -->
+    <link rel="stylesheet" href="../../dist/stylesheets/css/main.css">
+    <style>
+        label {
+            font-weight: 500 !important;
+        }
+        label:hover {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed" id="homepage">
     <div class="wrapper">
@@ -295,212 +303,647 @@
                                             </div>
 
                                             <div class="col-12 col-md-12 col-lg-12 bordered-label">
-                                                <label for="">Hematologi</label>
+                                                <label for="">HEMATOLOGI</label>
                                             </div>
 
                                             <div class="row m-4">
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="dl-sysmex" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="dl-sysmex" name="">
                                                     <label for="dl-sysmex" class="custom-control-label">DL Sysmex</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="viscositas-darah" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="viscositas-darah" name="">
                                                     <label for="viscositas-darah" class="custom-control-label">Viscositas Darah</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="viscositas-plasma" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="viscositas-plasma" name="">
                                                     <label for="viscositas-plasma" class="custom-control-label">Viscositas Plasma</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="tes-agregasi-trombosit" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="tes-agregasi-trombosit" name="">
                                                     <label for="tes-agregasi-trombosit" class="custom-control-label">Tes Agregasi Trombosit</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="golongan-darah-abo" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="golongan-darah-abo" name="">
                                                     <label for="golongan-darah-abo" class="custom-control-label">Golongan Darah ABO</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="golongan-darah-rhesus" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="golongan-darah-rhesus" name="">
                                                     <label for="golongan-darah-rhesus" class="custom-control-label">Golongan Darah Rhesus</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="retikulosit" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="retikulosit" name="">
                                                     <label for="retikulosit" class="custom-control-label">Retikulosit</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="hapusan-darah" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="hapusan-darah" name="">
                                                     <label for="hapusan-darah" class="custom-control-label">Hapusan Darah</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="laju-endap-darah" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="laju-endap-darah" name="">
                                                     <label for="laju-endap-darah" class="custom-control-label">Laju Endap Darah</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="serum-iron" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="serum-iron" name="">
                                                     <label for="serum-iron" class="custom-control-label">Serum Iron</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="tibc" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="tibc" name="">
                                                     <label for="tibc" class="custom-control-label">TIBC</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="bleeding-time" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="bleeding-time" name="">
                                                     <label for="bleeding-time" class="custom-control-label">Bleeding Time</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="clotting-time" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="clotting-time" name="">
                                                     <label for="clotting-time" class="custom-control-label">Clotting Time</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="ptt" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="ptt" name="">
                                                     <label for="ptt" class="custom-control-label">PTT (Prothombine Time)</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="aptt" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="aptt" name="">
                                                     <label for="aptt" class="custom-control-label">APTT (Activated Partial Thromboplastin Time)</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="fibrinogen" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="fibrinogen" name="">
                                                     <label for="fibrinogen" class="custom-control-label">Fibrinogen</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="trombine-time" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="trombine-time" name="">
                                                     <label for="trombine-time" class="custom-control-label">Trombine Time</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="d-dimer" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="d-dimer" name="">
                                                     <label for="d-dimer" class="custom-control-label">D-dimer</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="ferritin" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="ferritin" name="">
                                                     <label for="ferritin" class="custom-control-label">Ferritin</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="hb-elektroforesis" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="hb-elektroforesis" name="">
                                                     <label for="hb-elektroforesis" class="custom-control-label">Hb Elektroforesis</label>
                                                 </div>
                                             </div>
 
                                             <div class="col-12 col-md-12 col-lg-12 bordered-label">
-                                                <label for="">Kimia Klinik</label>
+                                                <label for="">KIMIA KLINIK</label>
                                             </div>
 
                                             <div class="row m-4">
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="sgot" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="sgot" name="">
                                                     <label for="sgot" class="custom-control-label">SGOT</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="sgpt" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="sgpt" name="">
                                                     <label for="sgpt" class="custom-control-label">SGPT</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="fosfatase-alkali" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="fosfatase-alkali" name="">
                                                     <label for="fosfatase-alkali" class="custom-control-label">Fosfatase Alkali</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="gamma-gt" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="gamma-gt" name="">
                                                     <label for="gamma-gt" class="custom-control-label">Gamma GT (Gamma Glutamyt)</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="albumin-serum" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="albumin-serum" name="">
                                                     <label for="albumin-serum" class="custom-control-label">Albumin Serum</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="globulin" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="globulin" name="">
                                                     <label for="globulin" class="custom-control-label">Globulin</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="protein-total" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="protein-total" name="">
                                                     <label for="protein-total" class="custom-control-label">Protein Total</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="amylase" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="amylase" name="">
                                                     <label for="amylase" class="custom-control-label">Amylase</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="lipase" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="lipase" name="">
                                                     <label for="lipase" class="custom-control-label">Lipase</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="ldh" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="ldh" name="">
                                                     <label for="ldh" class="custom-control-label">LDH (Laktat Dehydrogenase)</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="cpk" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="cpk" name="">
                                                     <label for="cpk" class="custom-control-label">CPK</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="total-lipid" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="total-lipid" name="">
                                                     <label for="total-lipid" class="custom-control-label">Total Lipid</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="triglyceride" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="triglyceride" name="">
                                                     <label for="triglyceride" class="custom-control-label">Triglyceride</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="cholesterol" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="cholesterol" name="">
                                                     <label for="cholesterol" class="custom-control-label">Cholesterol</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="bun" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="bun" name="">
                                                     <label for="bun" class="custom-control-label">BUN (Ureum)</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="creatinine" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="creatinine" name="">
                                                     <label for="creatinine" class="custom-control-label">Creatinine</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="creatinine-clearance" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="creatinine-clearance" name="">
                                                     <label for="creatinine-clearance" class="custom-control-label">Creatinine Clearance</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="uric-acid" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="uric-acid" name="">
                                                     <label for="uric-acid" class="custom-control-label">Uric Acid</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="gula-darah-puasa" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="gula-darah-puasa" name="">
                                                     <label for="gula-darah-puasa" class="custom-control-label">Gula Darah Puasa</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="gula-darah-acak" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="gula-darah-acak" name="">
                                                     <label for="gula-darah-acak" class="custom-control-label">Gula Darah Acak/Sewaktu</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="gula-darah-2jam" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="gula-darah-2jam" name="">
                                                     <label for="gula-darah-2jam" class="custom-control-label">Gula Darah 2 Jam PP</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="gtt" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="gtt" name="">
                                                     <label for="gtt" class="custom-control-label">GTT (Glucose Tolerance Test)</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="bj-plasma" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="bj-plasma" name="">
                                                     <label for="bj-plasma" class="custom-control-label">BJ Plasma</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="natrium" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="natrium" name="">
                                                     <label for="natrium" class="custom-control-label">Natrium</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="kalium" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="kalium" name="">
                                                     <label for="kalium" class="custom-control-label">Kalium</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="chlorida" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="chlorida" name="">
                                                     <label for="chlorida" class="custom-control-label">Chlorida</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="phospor" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="phospor" name="">
                                                     <label for="phospor" class="custom-control-label">Phospor</label>
                                                 </div>
-                                                <div class="col-12 col-md-6 col-lg-6 mb-3">
-                                                    <input class="custom-control-input" type="radio" id="bilirubine-total" name="">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="bilirubine-total" name="">
                                                     <label for="bilirubine-total" class="custom-control-label">Bilirubine Total</label>
                                                 </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="bilirubine-direct" name="">
+                                                    <label for="bilirubine-direct" class="custom-control-label">Bilirubine Direct</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="hba1c" name="">
+                                                    <label for="hba1c" class="custom-control-label">HbA1c</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="vitamin-d" name="">
+                                                    <label for="vitamin-d" class="custom-control-label">Vitamin D</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="troponin" name="">
+                                                    <label for="troponin" class="custom-control-label">Troponin (kualitatif)</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="rasio-cholestrol-total" name="">
+                                                    <label for="rasio-cholestrol-total" class="custom-control-label">Rasio Cholestrol Total/H</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="calcium" name="">
+                                                    <label for="calcium" class="custom-control-label">Calcium</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="A" name="">
+                                                    <label for="troponinA" class="custom-control-label">Troponin (kualitatif)</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="insulin" name="">
+                                                    <label for="insulin" class="custom-control-label">Insulin</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="bilirubin-indirect" name="">
+                                                    <label for="bilirubin-indirect" class="custom-control-label">Bilirubin Indirect</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="calsium" name="">
+                                                    <label for="calsium" class="custom-control-label">Calsium</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="ckmb" name="">
+                                                    <label for="ckmb" class="custom-control-label">CKMB</label>
+                                                </div>
                                             </div>
+
+                                            <div class="col-12 col-md-12 col-lg-12 bordered-label">
+                                                <label for="">URINE</label>
+                                            </div>
+
+                                            <div class="row m-4">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="urine-lengkap" name="">
+                                                    <label for="urine-lengkap" class="custom-control-label">Urine Lengkap</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="sediment" name="">
+                                                    <label for="sediment" class="custom-control-label">Sediment</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="acr" name="">
+                                                    <label for="acr" class="custom-control-label">ACR (Mikroalbumin)</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="narkoba-test" name="">
+                                                    <label for="narkoba-test" class="custom-control-label">Narkoba Test</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-12 col-lg-12 bordered-label">
+                                                <label for="">TEST KEHAMILAN</label>
+                                            </div>
+                                            <div class="row m-4">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="plano-test" name="">
+                                                    <label for="plano-test" class="custom-control-label">Plano Test</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-12 col-lg-12 bordered-label">
+                                                <label for="">FAECES</label>
+                                            </div>
+                                            <div class="row m-4">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="faeces-lengkap" name="">
+                                                    <label for="faeces-lengkap" class="custom-control-label">Faeces Lengkap</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="benzidin-test" name="">
+                                                    <label for="benzidin-test" class="custom-control-label">Benzidin Test</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="lemak-faeces" name="">
+                                                    <label for="lemak-faeces" class="custom-control-label">Lemak Faeces (Floating te-)</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-12 col-lg-12 bordered-label">
+                                                <label for="">IMUNO-SEROLOGI</label>
+                                            </div>
+                                            <div class="row m-4">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="widal-tabung" name="">
+                                                    <label for="widal-tabung" class="custom-control-label">Widal Tabung</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="widal-slide" name="">
+                                                    <label for="widal-slide" class="custom-control-label">Widal Slide</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="hbsag" name="">
+                                                    <label for="hbsag" class="custom-control-label">HBsAg (kuali)</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="igg-salmonella" name="">
+                                                    <label for="igg-salmonella" class="custom-control-label">IgG & IgM Salmonelia typh</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="tes-hiv" name="">
+                                                    <label for="tes-hiv" class="custom-control-label">Tes HIV (Rapid)</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="igg-dengue" name="">
+                                                    <label for="igg-dengue" class="custom-control-label">IgG & IgM Dengue</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="vdrl" name="">
+                                                    <label for="vdrl" class="custom-control-label">vdrl</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="tpha" name="">
+                                                    <label for="tpha" class="custom-control-label">tpha</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="igg-covid" name="">
+                                                    <label for="igg-covid" class="custom-control-label">IgG & IgM Covid-19 (Rapid)</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="crp" name="">
+                                                    <label for="crp" class="custom-control-label">CRP (C-Reactive Protein)</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="rose-waaler-test" name="">
+                                                    <label for="rose-waaler-test" class="custom-control-label">Rose Waaler Test</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="complement-c3" name="">
+                                                    <label for="complement-c3" class="custom-control-label">Complement C-3</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="ana" name="">
+                                                    <label for="ana" class="custom-control-label">ANA (Antinuclear Antibody)</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="igg" name="">
+                                                    <label for="igg" class="custom-control-label">igG</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="iga" name="">
+                                                    <label for="iga" class="custom-control-label">igA</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="igd" name="">
+                                                    <label for="igd" class="custom-control-label">igD</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="ige" name="">
+                                                    <label for="ige" class="custom-control-label">igE</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="anti-hbsag" name="">
+                                                    <label for="anti-hbsag" class="custom-control-label">Anti HBsAg</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="aso" name="">
+                                                    <label for="aso" class="custom-control-label">ASO (ASTO)</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="igg-toxoplasma" name="">
+                                                    <label for="igg-toxoplasma" class="custom-control-label">IgG Toxoplasma</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="igm-toxoplasma" name="">
+                                                    <label for="igm-toxoplasma" class="custom-control-label">igM Toxoplasma</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="rapid-swab-antigen-ri" name="">
+                                                    <label for="rapid-swab-antigen-ri" class="custom-control-label">Rapid Swab Antigen (RI)</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="swab-pcr" name="">
+                                                    <label for="swab-pcr" class="custom-control-label">SWAB PCR Cov 19</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="igg-covid19-p1" name="">
+                                                    <label for="igg-covid19-p1" class="custom-control-label">IgG & IgM Covid-19 (P1)</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="igg-covid19-p2" name="">
+                                                    <label for="igg-covid19-p2" class="custom-control-label">IgG & IgM Covid-19 (P2)</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="rapid-swab-antigen-rj" name="">
+                                                    <label for="rapid-swab-antigen-rj" class="custom-control-label">Rapid Swab Antigen (RJ)</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="dengue-ns1-ag" name="">
+                                                    <label for="dengue-ns1-ag" class="custom-control-label">Dengue NS1 Ag</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="swab-rt-pcr" name="">
+                                                    <label for="swab-rt-pcr" class="custom-control-label">SWAB RT-PCR SARS-CoV-2</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="il-6" name="">
+                                                    <label for="il-6" class="custom-control-label">IL-6</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="igm-anti-hsv" name="">
+                                                    <label for="igm-anti-hsv" class="custom-control-label">IgM/IgG anti HSV 1&2</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="anti-hsv-ii" name="">
+                                                    <label for="anti-hsv-ii" class="custom-control-label">Anti HSV II IgG</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-12 col-lg-12 bordered-label">
+                                                <label for="">HORMONAL & TUMOR MAKER</label>
+                                            </div>
+                                            <div class="row m-4">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="psa" name="">
+                                                    <label for="psa" class="custom-control-label">PSA</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="t3" name="">
+                                                    <label for="t3" class="custom-control-label">T3</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="t4" name="">
+                                                    <label for="t4" class="custom-control-label">T4</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="free-t3" name="">
+                                                    <label for="free-t3" class="custom-control-label">Free T-3 (FT 3)</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="free-t4" name="">
+                                                    <label for="free-t4" class="custom-control-label">Free T-4 (FT 4)</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="cea" name="">
+                                                    <label for="cea" class="custom-control-label">CEA</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="ca-125" name="">
+                                                    <label for="ca-125" class="custom-control-label">Ca 125</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="ca-15-3" name="">
+                                                    <label for="ca-15-3" class="custom-control-label">Ca 15-3</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="ca-19-9" name="">
+                                                    <label for="ca-19-9" class="custom-control-label">Ca 19-9</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="afp" name="">
+                                                    <label for="afp" class="custom-control-label">AFP (Alfa Feto Protein)</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="rheumatoid-factor" name="">
+                                                    <label for="rheumatoid-factor" class="custom-control-label">Rheumatoid Factor</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-12 col-lg-12 bordered-label">
+                                                <label for="">ANALISA SPERMA</label>
+                                            </div>
+                                            <div class="row m-4">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="semen-analisis" name="">
+                                                    <label for="semen-analisis" class="custom-control-label">Semen Analisis</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="mar-test" name="">
+                                                    <label for="mar-test" class="custom-control-label">MAR-test (Mixed Agglutina)</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-12 col-lg-12 bordered-label">
+                                                <label for="">FAAL HATI</label>
+                                            </div>
+                                            <div class="row m-4">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="anti-hcv" name="">
+                                                    <label for="anti-hcv" class="custom-control-label">Anti HCV</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="hbv-dna" name="">
+                                                    <label for="hbv-dna" class="custom-control-label">HBV-DNA</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="igm-anti-hav" name="">
+                                                    <label for="igm-anti-hav" class="custom-control-label">IgM Anti HAV</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="hbsag-elisa" name="">
+                                                    <label for="hbsag-elisa" class="custom-control-label">HBsAg (Elisa)</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="anti-hbcag" name="">
+                                                    <label for="anti-hbcag" class="custom-control-label">Anti HBcAg</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="anti-hcv-meia" name="">
+                                                    <label for="anti-hcv-meia" class="custom-control-label">Anti HCV (MEIA) </label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="hbeag" name="">
+                                                    <label for="hbeag" class="custom-control-label">HBeAg</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="hbsag" name="">
+                                                    <label for="hbsag" class="custom-control-label">HBsAg</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="hbsag-kuanti" name="">
+                                                    <label for="hbsag-kuanti" class="custom-control-label">HBsAg (Kuanti)</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="igm-anti-hbc" name="">
+                                                    <label for="igm-anti-hbc" class="custom-control-label">IgM Anti HBC</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="anti-hbc" name="">
+                                                    <label for="anti-hbc" class="custom-control-label">Anti HBC</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="anti-hbs-title" name="">
+                                                    <label for="anti-hbs-title" class="custom-control-label">Anti HBS Title</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="amilase" name="">
+                                                    <label for="amilase" class="custom-control-label">Amilase</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-12 col-lg-12 bordered-label">
+                                                <label for="">IMMUNOLOGI</label>
+                                            </div>
+                                            <div class="row m-4">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="igm" name="">
+                                                    <label for="igm" class="custom-control-label">IgM</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="printout-rdt" name="">
+                                                    <label for="printout-rdt" class="custom-control-label">Printout RDT Ab C-19</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="pct" name="">
+                                                    <label for="pct" class="custom-control-label">PCT (Procalcitonin)</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="ig-e-total" name="">
+                                                    <label for="ig-e-total" class="custom-control-label">Ig E Total</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-12 col-lg-12 bordered-label my-4">
+                                                <label for="">FAAL GINJAL</label>
+                                            </div>
+
+                                            <div class="col-12 col-md-12 col-lg-12 bordered-label my-4">
+                                                <label for="">HBsAg (Kuanti)</label>
+                                            </div>
+
+                                            <div class="col-12 col-md-12 col-lg-12 bordered-label my-4">
+                                                <label for="">PROFIL LIPID</label>
+                                            </div>
+
+                                            <div class="col-12 col-md-12 col-lg-12 bordered-label">
+                                                <label for="">HORMONAL</label>
+                                            </div>
+                                            <div class="row m-4">
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="fsh" name="">
+                                                    <label for="fsh" class="custom-control-label">FSH</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="lh" name="">
+                                                    <label for="lh" class="custom-control-label">LH</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="testosteron" name="">
+                                                    <label for="testosteron" class="custom-control-label">Testosteron</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="prolaktin" name="">
+                                                    <label for="prolaktin" class="custom-control-label">Prolaktin</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="tsh-s" name="">
+                                                    <label for="tsh-s" class="custom-control-label">TSH-s</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="estradiol" name="">
+                                                    <label for="estradiol" class="custom-control-label">Estradiol</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="aldosteron" name="">
+                                                    <label for="aldosteron" class="custom-control-label">Aldosteron</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="cortisol" name="">
+                                                    <label for="cortisol" class="custom-control-label">Cortisol</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="c-peptide" name="">
+                                                    <label for="c-peptide" class="custom-control-label">C-Peptide</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="testosteron-free" name="">
+                                                    <label for="testosteron-free" class="custom-control-label">Testosteron Free</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6 mb-3 custom-control custom-checkbox">
+                                                    <input class="custom-control-input" type="checkbox" id="progesteron" name="">
+                                                    <label for="progesteron" class="custom-control-label">Progesteron</label>
+                                                </div>
+                                            </div>
+
                                         </div>
-                                        <div class="card-footer"></div>
+                                        <div class="card-footer text-right">
+                                            <button type="submit" class="btn btn-success">Kirim Permintaan</button>
+                                            <button type="submit" class="btn">CLOSE</button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="card-footer"></div>
