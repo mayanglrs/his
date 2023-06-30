@@ -52,8 +52,30 @@
             background-color: var(--violet-blue);
             color: #fff;
             span {
-                font-size: 1.5rem;
+                font-size: 1.25rem;
                 font-weight: 500;
+            }
+
+            .brand-text {
+                @media (max-width: 400px) {
+                    &:before {
+                        content: 'HIS';
+                    }
+                    
+                    & > span {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .navbar-toggler {
+            color: #fff;
+            border-color: #fff;
+            margin-left: 1rem;
+
+            .navbar-toggler-icon {
+                filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(84deg) brightness(102%) contrast(103%);
             }
         }
     }

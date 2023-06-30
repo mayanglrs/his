@@ -90,126 +90,6 @@
         </nav>
         <!-- /.navbar -->
 
-        <!-- Main Sidebar Container -->
-        <aside class="main-sidebar sidebar-light-primary elevation-4">
-            <!-- Brand Logo -->
-            <a href="index3.html" class="brand-link text-center">
-                <!-- <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> -->
-                <span class="brand-text">Healthcare Information System</span>
-            </a>
-
-            <!-- Sidebar -->
-            <div class="sidebar">
-                <!-- Sidebar user (optional) -->
-                <div class="user-panel mt-3 pb-3 mb-3 d-flex overflow-visible">
-                    <div class="image my-auto">
-                        <img src="../../dist/img/user1-128x128.jpg" class="img-circle elevation-2" alt="User Image">
-                    </div>
-                    <div class="dropdown w-100">
-                        <div class="info dropdown-toggle w-100" data-toggle="dropdown">
-                            <a href="#" class="d-block">Administrator</a>
-                            <small class="text-muted">Modul Registrasi</small>
-                        </div>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="nav-actions">
-                            <a class="dropdown-item" href="../../index.html">
-                                <i class="fa fa-sign-out-alt"></i> Logout
-                            </a>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Sidebar Menu -->
-                <nav class="mt-2">
-                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                    <li class="nav-header">MAIN NAVIGATIONS</li>
-                    <li class="nav-item">
-                        <a href="./index.html" class="nav-link">
-                            <i class="nav-icon fas fa-th-large"></i>
-                            <p>Dashboard</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./reg-rawat-jalan.html" class="nav-link">
-                            <i class="nav-icon fas fa-walking"></i>
-                            <p>1. Reg Rawat Jalan</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./reg-rawat-inap.html" class="nav-link">
-                            <i class="nav-icon fas fa-bed"></i>
-                            <p>2. Reg Rawat Inap</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./reg-pasien-baru.html" class="nav-link active">
-                            <i class="nav-icon fas fa-plus-circle"></i>
-                            <p>3. Pasien Baru</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./cetak-kartu.html" class="nav-link">
-                            <i class="nav-icon fas fa-desktop"></i>
-                            <p>4 Cetak Kartu</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./list-rawat-inap.html" class="nav-link">
-                            <i class="nav-icon fas fa-list-alt"></i>
-                            <p>5. List Rawat Inap</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./laporan.html" class="nav-link">
-                            <i class="nav-icon fas fa-exclamation-circle"></i>
-                            <p>6. Laporan</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-stream"></i>
-                            <p>7. Antrian Online <i class="right fas fa-angle-left"></i></p>
-                        </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="./sub-menu-1.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Sub Menu 1</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./sub-menu-2.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Sub Menu 2</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-exchange-alt"></i>
-                            <p>8. VCLAIM <i class="right fas fa-angle-left"></i></p>
-                        </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="./sub-menu-1.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Sub Menu 1</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./sub-menu-2.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Sub Menu 2</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                </nav>
-                <!-- /.sidebar-menu -->
-            </div>
-            <!-- /.sidebar -->
-        </aside>
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
@@ -244,153 +124,200 @@
                                 </div>
                                 <form action="#" method="post">
                                     <div class="card-body">
-                                        <div class="form-row mb-4 align-items-end">
+                                        <div class="row">
                                             <div class="col-12 col-md-4">
-                                                <label class="m-0 text-black-50" for="">No. Rekam Medik (RM)</label>
-                                                <input type="text" class="form-control form-control-border" placeholder="No. Rekam Medik (RM)" value="~Auto~">
-                                                <small class="form-control-feedback float-right text-muted">Min. Max. 10 numbers</small>
+                                                <div class="form-group align-items-end">
+                                                    <label class="m-0 text-black-50" for="">No. Rekam Medik (RM)</label>
+                                                    <input type="text" class="form-control form-control-border" placeholder="No. Rekam Medik (RM)" value="~Auto~">
+                                                    <small class="form-control-feedback float-right text-muted">Min. Max. 10 numbers</small>
+                                                </div>
                                             </div>
                                             <div class="col-12 col-md-8">
-                                                <input type="text" class="form-control form-control-border" placeholder="Nama Lengkap (Full Name)">
-                                                <small class="form-control-feedback float-right text-muted">Min. Value: 10, Max. Value 200</small>
+                                                <div class="form-group mb-2 align-items-end">
+                                                    <label class="m-0 text-black-50" for=""></label>
+                                                    <input type="text" class="form-control form-control-border" placeholder="Nama Lengkap (Full Name)">
+                                                    <small class="form-control-feedback float-right text-muted">Min. Value: 10, Max. Value 200</small>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="form-row mb-4">
+                                        <div class="row">
                                             <div class="col-12 col-md-4">
-                                                <select class="form-control form-control-border">
-                                                    <option selected disabled>ID Card</option>
-                                                    <option value="KTP">KTP</option>
-                                                    <option value="SIM">SIM</option>
-                                                    <option value="PASPOR">PASPOR</option>
-                                                </select>
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-border">
+                                                        <option selected disabled>ID Card</option>
+                                                        <option value="KTP">KTP</option>
+                                                        <option value="SIM">SIM</option>
+                                                        <option value="PASPOR">PASPOR</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                             <div class="col-12 col-md-8">
-                                                <input type="number" class="form-control form-control-border" placeholder="Nomor KTP/SIM/PASPOR">
-                                                <small class="form-control-feedback float-right text-muted">Min. Value: 8</small>
+                                                <div class="form-group">
+                                                    <input type="number" class="form-control form-control-border" placeholder="Nomor KTP/SIM/PASPOR">
+                                                    <small class="form-control-feedback float-right text-muted">Min. Value: 8</small>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="form-row mb-4">
+                                        <div class="row">
                                             <div class="col-12 col-md-6">
-                                                <label class="m-0 text-black-50" for="">Alamat KTP</label>
-                                                <input type="text" class="form-control form-control-border" placeholder="">
-                                                <small class="form-control-feedback float-right text-muted">Min. Value: 255</small>
+                                                <div class="form-group">
+                                                    <label class="m-0 text-black-50" for="">Alamat KTP</label>
+                                                    <input type="text" class="form-control form-control-border" placeholder="">
+                                                    <small class="form-control-feedback float-right text-muted">Min. Value: 255</small>
+                                                </div>
                                             </div>
                                             <div class="col-12 col-md-6">
-                                                <label class="m-0 text-black-50" for="">Alamat Sekarang</label>
-                                                <input type="text" class="form-control form-control-border" placeholder="">
-                                                <small class="form-control-feedback float-right text-muted">Min. Value: 255</small>
-                                            </div>
-                                        </div>
-                                        <div class="form-row mb-4">
-                                            <div class="col-12 col-md-6">
-                                                <select class="form-control form-control-border">
-                                                    <option selected disabled>Pilih Provinsi</option>
-                                                    <option>...</option>
-                                                    <option>...</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-12 col-md-6">
-                                                <select class="form-control form-control-border">
-                                                    <option selected disabled></option>
-                                                    <option>...</option>
-                                                    <option>...</option>
-                                                </select>
+                                                <div class="form-group">
+                                                    <label class="m-0 text-black-50" for="">Alamat Sekarang</label>
+                                                    <input type="text" class="form-control form-control-border" placeholder="">
+                                                    <small class="form-control-feedback float-right text-muted">Min. Value: 255</small>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="form-row mb-4">
+                                        <div class="row">
                                             <div class="col-12 col-md-6">
-                                                <select class="form-control form-control-border">
-                                                    <option selected disabled></option>
-                                                    <option>...</option>
-                                                    <option>...</option>
-                                                </select>
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-border">
+                                                        <option selected disabled>Pilih Provinsi</option>
+                                                        <option>...</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>  
                                             </div>
                                             <div class="col-12 col-md-6">
-                                                <select class="form-control form-control-border">
-                                                    <option selected disabled></option>
-                                                    <option>...</option>
-                                                    <option>...</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-row mb-4">
-                                            <div class="col-12 col-md-6">
-                                                <input type="text" class="form-control form-control-border" placeholder="Tempat Lahir">
-                                            </div>
-                                            <div class="col-12 col-md-6">
-                                                <input type="text" class="form-control form-control-border" placeholder="Tanggal Lahir">
-                                                <small class="form-control-feedback float-right text-muted">Date Value Ex: 01/30/2001</small>
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-border">
+                                                        <option selected disabled></option>
+                                                        <option>...</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="form-group mb-4">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-border">
+                                                        <option selected disabled></option>
+                                                        <option>...</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-border">
+                                                        <option selected disabled></option>
+                                                        <option>...</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control form-control-border" placeholder="Tempat Lahir">
+                                                </div>  
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control form-control-border" placeholder="Tanggal Lahir">
+                                                    <small class="form-control-feedback float-right text-muted">Date Value Ex: 01/30/2001</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
                                             <select class="form-control form-control-border">
                                                 <option selected disabled>Agama</option>
                                                 <option>...</option>
                                                 <option>...</option>
                                             </select>
                                         </div>
-                                        <div class="form-row mb-4">
+                                        <div class="row">
                                             <div class="col-12 col-md-6">
-                                                <select class="form-control form-control-border">
-                                                    <option selected disabled>Pilih Jenis ....</option>
-                                                    <option>...</option>
-                                                    <option>...</option>
-                                                </select>
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-border">
+                                                        <option selected disabled>Pilih Jenis ....</option>
+                                                        <option>...</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                             <div class="col-12 col-md-6">
-                                                <select class="form-control form-control-border">
-                                                    <option selected disabled>Pilih Penjamin ....</option>
-                                                    <option>...</option>
-                                                    <option>...</option>
-                                                </select>
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-border">
+                                                        <option selected disabled>Pilih Penjamin ....</option>
+                                                        <option>...</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="form-group mb-4">
-                                            <input type="number" class="form-control form-control-border" placeholder="Nomor Penjamin">
-                                            <small class="form-control-feedback float-right text-muted">Min. Value: 10</small>
-                                        </div>
-                                        <div class="form-row mb-4">
-                                            <div class="col">
-                                                <input type="text" class="form-control form-control-border" placeholder="Telp. Rumah">
-                                                <small class="form-control-feedback float-right text-muted">Min. 7</small>
-                                            </div>
-                                            <div class="col">
-                                                <input type="text" class="form-control form-control-border" placeholder="Mobile Phone-1">
-                                                <small class="form-control-feedback float-right text-muted">Min. 10</small>
-                                            </div>
-                                            <div class="col">
-                                                <input type="text" class="form-control form-control-border" placeholder="Mobile Phone-1 (Opsional)">
-                                                <small class="form-control-feedback float-right text-muted">Min. 10</small>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group mb-2">
+                                                    <input type="number" class="form-control form-control-border" placeholder="Nomor Penjamin">
+                                                    <small class="form-control-feedback float-right text-muted">Min. Value: 10</small>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="form-row">
+                                        <div class="row">
+                                            <div class="col-12 col-md-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control form-control-border" placeholder="Telp. Rumah">
+                                                    <small class="form-control-feedback float-right text-muted">Min. 7</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control form-control-border" placeholder="Mobile Phone-1">
+                                                    <small class="form-control-feedback float-right text-muted">Min. 10</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control form-control-border" placeholder="Mobile Phone-1 (Opsional)">
+                                                    <small class="form-control-feedback float-right text-muted">Min. 10</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
                                             <div class="col">
-                                                <select class="form-control form-control-border">
-                                                    <option selected disabled>Jenis Kelamin</option>
-                                                    <option>...</option>
-                                                    <option>...</option>
-                                                </select>
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-border">
+                                                        <option selected disabled>Jenis Kelamin</option>
+                                                        <option>...</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                             <div class="col">
-                                                <select class="form-control form-control-border">
-                                                    <option selected disabled>Golongan Darah</option>
-                                                    <option>...</option>
-                                                    <option>...</option>
-                                                </select>
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-border">
+                                                        <option selected disabled>Golongan Darah</option>
+                                                        <option>...</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                             <div class="col">
-                                                <select class="form-control form-control-border">
-                                                    <option selected disabled>Pendidikan</option>
-                                                    <option>...</option>
-                                                    <option>...</option>
-                                                </select>
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-border">
+                                                        <option selected disabled>Pendidikan</option>
+                                                        <option>...</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                             <div class="col">
-                                                <select class="form-control form-control-border">
-                                                    <option selected disabled>Pekerjaan</option>
-                                                    <option>...</option>
-                                                    <option>...</option>
-                                                </select>
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-border">
+                                                        <option selected disabled>Pekerjaan</option>
+                                                        <option>...</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -444,7 +371,7 @@
                                 <form action="#" method="post">
                                     <div class="card-body">
                                         <div class="form-group">
-                                            <select class="form-control select2bs4">
+                                            <select class="form-control form-control-border">
                                                 <option selected disabled>Pilih Pasien</option>
                                                 <option>...</option>
                                                 <option>...</option>
@@ -488,7 +415,7 @@
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
-            Copyright &copy; 2019 | <strong><a href="/">Healthcare Information System</a>.</strong>
+            Copyright &copy; 2023 | <strong><a href="/">Healthcare Information System</a>.</strong>
             <div class="float-right d-none d-sm-inline-block">
                 <!-- <b>Version</b> 3.2.0 -->
             </div>
