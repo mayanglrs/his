@@ -36,20 +36,57 @@
 <body class="hold-transition layout-top-nav" id="homepage">
     <div class="wrapper">
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-            <!-- Left navbar links -->
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <!-- Brand Logo -->
-                    <a href="index3.html" class="brand-link">
-                        <!-- <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> -->
-                        <span class="brand-text">Healthcare Information System</span>
-                    </a>
-                </li>
-            </ul>
+        <nav class="main-header navbar navbar-expand-md navbar-white navbar-light">
+            <!-- Brand Logo -->
+            <a href="../../pages/home.html" class="brand-link">
+                <span class="brand-text"><span class="brand-title">Healthcare Information System</span></span>
+            </a>
+
+            <span class="separator-nav"></span>
+
+            <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="../../pages/home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Modul Rawat Jalan</a>
+                        <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+                            <li><a href="../../pages/rawat-jalan/index.html" class="dropdown-item">Rawat Jalan Menu</a></li>
+                            <li><a href="../../pages/rawat-jalan/rekam-medis.html" class="dropdown-item">Rekam Medis</a></li>
+                            <li><a href="../../pages/rawat-jalan/logistik.html" class="dropdown-item">Logistik</a></li>
+                            <li><a href="../../pages/rawat-jalan/laporan-pasien.html" class="dropdown-item">Laporan Pasien</a></li>
+                            <li><a href="../../pages/rawat-jalan/set-sub-unit.html" class="dropdown-item">Set Sub Unit</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Modul Rawat Inap</a>
+                        <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+                            <li><a href="../../pages/rawat-inap/index.html" class="dropdown-item">Rekam Medis</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Modul Apotek</a>
+                        <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+                            <li><a href="../../pages/apotek/transaksi-apotek.html" class="dropdown-item">Transaksi Apotek</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Modul Kasir</a>
+                        <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+                            <li><a href="../../pages/kasir/index.html" class="dropdown-item">Pembayaran</a></li>
+                            <li><a href="../../pages/kasir/opsi.html" class="dropdown-item">Opsi</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>  
 
             <!-- Right navbar links -->
-            <ul class="navbar-nav ml-auto">
+            <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
             <!-- Navbar Search -->
             <li class="nav-item">
                 <a class="nav-link" data-widget="navbar-search" href="#" role="button">
