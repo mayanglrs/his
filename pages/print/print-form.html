@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Information System | Form Printout</title>
+
+    <!-- Gunakan styling seminim mungkin dan jangan menggunakan link eksternal -->
+    <style>
+        body {
+            font-family: 'Roboto', system-ui, sans-serif;
+        }
+
+        main {
+            width: 100%;
+        }
+        .container {
+            margin: 24px auto;
+            width: fit-content;
+        }
+        .card-header {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            border-bottom: 1px solid #777777;
+            padding-bottom: 0.75rem;
+        }
+        .card-logo img {
+            width: 128px;
+        }
+        .card-wrapper {
+            display: block;
+        }
+        .card-box {
+            margin-left: auto;
+        }
+        .card-box .card-box-identity {
+            border: 1px solid #000;
+        }
+        .card-title,
+        .card-sub-title {
+            margin: 0;
+            font-size: 16px;
+        }
+        .card-sub-title {
+            font-size: 14px;
+        }
+      
+        .card-footer p {
+            text-align: center;
+            font-size: 14px;
+        }
+        .card-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .card-table .top-title {
+            background: #000;
+            color: #fff;
+            text-align: center !important;
+            font-weight: bold !important;
+        }
+        .card-table .card-table-title tr{
+            width: 100%;
+        }
+        .card-table .card-table-title th{
+            border-top-width: 1px;
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+            border-right-width: 1px;
+            border-style: solid;
+            border-color: #000;
+            text-align: left;
+            font-weight: normal;
+            padding: 0.5rem;
+        }
+        .card-table .card-table-title th:not(:first-child):nth-child(1),
+        .card-table .card-table-title th:not(:first-child):nth-child(2) {
+            width: 40%;
+        }
+        .card-table .card-table-title th:not(:first-child):nth-child(3) {
+            width: 20%;
+        }
+        .card-table .check-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .card-table .check-box {
+            width: 10px;
+            height: 10px;
+            border: 1px solid #000;
+        }
+        .card-table .card-table-title .box-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .card-table .card-table-title .box-area .box-content {
+            width: 100px;
+            height: 50px;
+            border: 1px solid #000;
+        }
+        .card-table .card-table-content .title-content {
+            background : #dcdcdc;
+            color: #000;
+            text-align: center;
+            font-weight: bold;
+        }
+        .card-table .card-table-content .subtitle-content {
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-logo">
+                        <img src="https://grhakumalaclinic.com/wp-content/uploads/2019/09/logo-6.png" alt="HIS logo">
+                    </div>
+                    <div class="card-wrapper">
+                        <h3 class="card-title">Klinik Utama Rawat Inap</h3>
+                        <p class="card-sub-title">GRHA KUMALA</p>
+                    </div>
+                    <div class="card-box">
+                        <table class="card-box-identity">
+                            <tr>
+                                <td>No. RM</td>
+                                <td>:</td>
+                                <td>____________________________________</td>
+                            </tr>
+                            <tr>
+                                <td>Nama Pasien</td>
+                                <td>:</td>
+                                <td>____________________________________</td>
+                            </tr>
+                            <tr>
+                                <td>Tanggal Lahir</td>
+                                <td>:</td>
+                                <td>____________________________________</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <table class="card-table">
+                        <thead class="card-table-title">
+                            <tr>
+                                <th colspan="3" class="top-title">ASESMEN GAWAT DARURAT</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Tiba di IGD
+                                    : <span>....................</span> pk <span>....................</span>
+
+                                    <br/>
+                                </th>
+                                <th> 
+                                    <div class="check-item">
+                                        Kasus <span class="check-box"></span>
+                                    </div>  
+                                    <div class="check-item">
+                                        Non Trauma <span class="check-box"></span>
+                                    </div>  
+                                    <div class="check-item">
+                                        Trauma <span class="check-box"></span>
+                                        <span>....................</span>
+                                    </div>  
+                                </th>
+                                <th rowspan="4">
+                                    <div class="box-area">
+                                        <span class="box-title">TRIASE</span>
+                                        <span class="box-content"></span>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Diperiksa
+                                    : <span>....................</span> pk <span>.....................</span>
+
+                                </th>
+                                <th>
+                                    <div class="check-item">
+                                        <span class="check-box"></span> KLL tanggal <span>.......................</span> pk <span>.............................</span>
+                                    </div>  
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Dokter
+                                    : <span>..................................................................</span>
+                                </th>
+                                <th>
+                                    Transportasi
+                                    : <span>.............................................................</span>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Perawat
+                                    : <span>..............................................................</span>
+                                </th>
+                                <th>
+                                    Riwayat alergi :
+                                    <div class="check-item">
+                                        <span class="check-box"></span> Ya, <span>............................</span>
+                                    </div>  
+                                    <div class="check-item">
+                                        <span class="check-box"></span> Tidak 
+                                    </div>  
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="card-table-content">
+                            <tr>
+                                <td colspan="3" class="title-content">Asesmen Medis</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="subtitle-content">SURVEY PRIMER</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <span class="data-no">1.</span>
+                                    <span class="data-label">AIRWAY & C-SPINE IMMOBILIZATION: </span>
+                                    <span class="data-value">.....................................................................................................................................................</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <span class="data-no">2.</span>
+                                    <span class="data-label">BREATHING: </span>
+                                    <span class="data-value">...........................................................................................................................................................................................................</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <span class="data-no">3.</span>
+                                    <span class="data-label">CIRCULATION: </span>
+                                    <span class="data-value">......................................................................................................................................................................................................</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <span class="data-no">4.</span>
+                                    <span class="data-label">DISABILITY: </span>
+                                    <span class="data-value">....................................................................................................................................................</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <span class="data-no">5.</span>
+                                    <span class="data-label">EXPOSURE: </span>
+                                    <span class="data-value">....................................................................................................................................................</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">RESUSITASI: ............................................................................................................................................................
+                                    </br> ..............................................................................................................................................................................
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="subtitle-content">SURVEY SEKUNDER</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="subtitle-content">A. ANAMNESIS</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <span class="data-no">1.</span>
+                                    <span class="data-label">Keluhan Utama : </span>
+                                    <span class="data-value">....................................................................................................................................................
+                                        </br> .............................................................................................................................................................................. 
+                                        </br>
+                                        <div class="check-item">
+                                            <span class="check-box"></span> Auto Anamnesa
+                                            <span class="check-box"></span> Hetero Anamnesa (Nama : ............................................ Hubungan : ...........................................................)
+                                        </div>  
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <span class="data-no">2.</span>
+                                    <span class="data-label">Fungsional : </span>
+                                    <span class="data-value">
+                                        <div class="check-item">
+                                            <span class="check-box"></span> Berjalan tanpa bantuan
+                                            <span class="check-box"></span> Berjalan dengan bantuan
+                                            <span class="check-box"></span> Alat bantu ...............................................
+                                        </div>  
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <span class="data-no">3.</span>
+                                    <span class="data-label">Riwayat penyakit terdahulu : </span>
+                                    <span class="data-value">....................................................................................................................................................
+                                        </br> .............................................................................................................................................................................. 
+                                        </br>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <span class="data-no">4.</span>
+                                    <span class="data-label">Riwayat penyakit keluarga : </span>
+                                    <span class="data-value">....................................................................................................................................................
+                                        </br> .............................................................................................................................................................................. 
+                                        </br>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <span class="data-no">5.</span>
+                                    <span class="data-label">Kehamilan : </span>
+                                    <span class="data-value">
+                                        <div class="check-item">
+                                            <span class="check-box"></span> Tidak hamil
+                                            <span class="check-box"></span> Hamil ke ..........................
+                                            <span class="check-box"></span> Abortus ..........................
+                                            <span class="check-box"></span> HPHT ...........................
+                                        </div>  
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <span class="data-no">6.</span>
+                                    <span class="data-label">Keadaan umum : </span>
+                                    <span class="data-value">....................................................................................................................................................
+                                        </br>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <span class="data-no">7.</span>
+                                    <span class="data-label">Skor Asesmen Nyeri : </span>
+                                    <span class="data-value">....................................................................................................................................................
+                                        </br>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <span class="data-no">8.</span>
+                                    <span class="data-label">Psikologis : </span>
+                                    <span class="data-value">
+                                        <div class="check-item">
+                                            <span class="check-box"></span> Tenang
+                                            <span class="check-box"></span> Marah
+                                            <span class="check-box"></span> Gelisah
+                                            <span class="check-box"></span> Cemas
+                                            <span class="check-box"></span> Lainnya , ......................................
+                                        </div>  
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <span class="data-no">9.</span>
+                                    <span class="data-label">Pekerjaan : </span>
+                                    <span class="data-value">
+                                        <div class="check-item">
+                                            <span class="check-box"></span> Wiraswasta
+                                            <span class="check-box"></span> Swasta
+                                            <span class="check-box"></span> PNS
+                                            <span class="check-box"></span> Lainnya , ......................................
+                                        </div>  
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <span class="data-no">10.</span>
+                                    <span class="data-label">Tinggal : </span>
+                                    <span class="data-value">
+                                        <div class="check-item">
+                                            <span class="check-box"></span> Sendiri
+                                            <span class="check-box"></span> Dengan suami/ istri/ anak
+                                            <span class="check-box"></span> Orang tua
+                                            <span class="check-box"></span> Lainnya , ......................................
+                                        </div>  
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <span class="data-no">11.</span>
+                                    <span class="data-label">Pembiayaan : </span>
+                                    <span class="data-value">
+                                        <div class="check-item">
+                                            <span class="check-box"></span> Biaya sendiri
+                                            <span class="check-box"></span> Asuransi , ......................................
+                                        </div>  
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="subtitle-content">B. PEMERIKSAAN FISIK (pk. .......................................................)</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <span class="data-no">1.</span>
+                                    <span class="data-label">Berat Badan : </span>
+                                    <span class="data-value">........................................ kg
+                                    </span>
+
+                                    <span class="data-label">Tinggi Badan  : </span>
+                                    <span class="data-value">........................................ kg
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <span class="data-no">2.</span>
+                                    <span class="data-label">Tanda Vital (TTV diisi oleh dokter/perawat/bidan) : </span>
+
+                                    <br>
+
+                                    <span class="data-label">Tingkat Kesadaran  : </span>
+                                    <span class="data-value">................................................................ (GCS : E ………. V ………… M ………… ) </span>
+
+                                    <br>
+
+                                    <span class="data-label">Tensi  : </span>
+                                    <span class="data-value">................... mmHg </span>
+
+                                    <span class="data-label">Suhu  : </span>
+                                    <span class="data-value">................... °C </span>
+
+                                    <span class="data-label">Nadi  : </span>
+                                    <span class="data-value">................... x/menit </span>
+
+                                    <span class="data-label">Respirasi  : </span>
+                                    <span class="data-value">................... x/menit </span>
+
+                                    <br>
+                                    <span class="data-label">SaO2  : </span>
+                                    <span class="data-value">................... % </span>
+
+                                    <br>
+                                    <span class="data-label">TFU  : </span>
+                                    <span class="data-value">................... cm</span>
+
+                                    <span class="data-label">DJJ  : </span>
+                                    <span class="data-value">................... x/menit</span>
+
+                                    <span class="data-label">His  : </span>
+                                    <span class="data-value">...................</span>
+
+                                    <span class="data-label">VT  : </span>
+                                    <span class="data-value">................... cm</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <span class="data-no">3.</span>
+                                    <span class="data-label">Status Generalis <br/> </span>
+                                    <span class="data-label">Kepala / leher <span>
+                                    <span class="data-value">
+                                        <div class="check-item">
+                                            <span class="check-box"></span> Normal
+                                            <span class="check-box"></span> Abnormal , ......................................
+                                        </div>  
+                                    </span>
+
+                                    <br>
+
+                                    <span class="data-label">Thorax : <span>
+                                    <span class="data-value">
+                                        <div class="check-item">
+                                            <span class="check-box"></span> Normal
+                                            <span class="check-box"></span> Abnormal , ......................................
+                                        </div>  
+                                    </span>
+
+                                    <br>
+
+                                    
+                                    <span class="data-label">Abdomen : <span>
+                                        <span class="data-value">
+                                            <div class="check-item">
+                                                <span class="check-box"></span> Normal
+                                                <span class="check-box"></span> Abnormal , ......................................
+                                            </div>  
+                                        </span>
+                                    </span>
+
+                                    <br>
+
+                                    
+                                    <span class="data-label">Punggung : <span>
+                                        <span class="data-value">
+                                            <div class="check-item">
+                                                <span class="check-box"></span> Normal
+                                                <span class="check-box"></span> Abnormal , ......................................
+                                            </div>  
+                                        </span>
+                                    </span>
+
+                                    <br>
+
+                                    <span class="data-label">Pelvis/ genitalia : <span>
+                                        <span class="data-value">
+                                            <div class="check-item">
+                                                <span class="check-box"></span> Normal
+                                                <span class="check-box"></span> Abnormal , ......................................
+                                            </div>  
+                                        </span>
+                                    </span>
+
+                                    <br>
+
+                                    <span class="data-label">Ekstremitas : <span>
+                                        <span class="data-value">
+                                            <div class="check-item">
+                                                <span class="check-box"></span> Normal
+                                                <span class="check-box"></span> Abnormal , ......................................
+                                            </div>  
+                                        </span>
+                                    </span>
+
+                                    <br>
+
+                                    <span class="data-label">Catatan Lain: <span>
+                                        <span class="data-value">
+                                            <div class="check-item">
+                                                <span class="check-box"></span> Normal
+                                                <span class="data-value">.........................................................................</span>
+                                            </div>  
+                                        </span>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- <div class="card-footer">
+                    <p>
+                        Silahkan menunggu di Ruang Tunggu <br>
+                        untuk mendapatkan pelayanan sesuai Antrian. <br>
+                        Berlaku 1X Kunjungan di hari yang sama.
+                    </p>
+                </div> -->
+            </div>
+        </div>
+    </main>
+    <script>
+        // window.addEventListener('load', () => {
+        //     // Automatically open the print dialog
+        //     window.print();
+        // });
+    </script>
+</body>
+</html>
